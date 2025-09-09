@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>img태그</title>
+    <style>
+        img{
+            width: 500px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 
+        1. 이미지 태그
+        = 'html' 문서에는 <img>태그로 사용하여 이미지를  표현
+
+        2. 이미지 태그 속성
+        = <img src = "이미지 파일 경로 / url" alt = "이미지 대체 텍스트"> 
+        = src = "이미지 경로" / alt = "이미지 대체 글자"
+
+        3.이미지 설명글
+        = <figure> : 설명글과 이미지 전체를 감싼다
+        = <figcaption> : 설명글 '<figcaption>'태그 사이에 표시
+    -->
+
+    <!-- 절대경로 -->
+    <figure>
+        <img src="https://cdn.pixabay.com/photo/2021/03/01/09/29/woman-6059236_1280.jpg" alt="img">
+        <figcaption>
+            'figure'안에 'figcaption'넣어 글자를 넣기
+        </figcaption>
+    </figure>
+
+
+    <!-- 상대경로 -->
+     <img src="img/woman-8360359_1280.jpg" alt="img">
+      <p>
+        일반 p태그를 사용하여 글자 넣기
+      </p>
+        
+    
+</body>
+</html>

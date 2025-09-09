@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>width(넓이),height(높이)속성</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .box1{
+            width: 300px; 
+            height: 100px;
+            background-color: blue;
+        }
+
+        .box2{
+            width: 50%; 
+            height: 100px;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 
+        width(넓이),height(높이)속성
+        = 박스 모델에서 콘텐츠 영역의 크기를 지정할 때 넓이,높이 속성을 지정
+        = width(넓이) : 크기(px) / 백분율(%) / auto
+        = height(높이) : 크기(px) / 백분율(%) / auto
+            크기 : 넓이나 높이값을 px 형태의 단위로 지정/ 고정값
+            백분율 : 박스 형태의 크기를 부모 박스 기준으로 %로 지정 / 가변넓이(현재 브라우저 창 넓이의 50% 유지)
+            auto : 박스 형태의 넓이와 높이 값을 콘텐츠 양에 따라 자동 결정되는 기본값 
+    -->
+
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+    
+</body>
+</html>
