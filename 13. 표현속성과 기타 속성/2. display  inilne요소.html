@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display  inilne요소</title>
+    <style>
+        li{
+            border: 2px solid black;
+        }
+
+        .v_menu{
+            list-style: none;
+        }
+
+        .h_menu{
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 
+        display  inilne
+        = 안리인 요소로 변경
+        = '블럭 요소'들을 한 줄로 나란히 정렬한다
+        = 안엔 있는 콘텐츠(글자 등등) 크기 만큼만 가진다
+        = 콘텐츠 만큼 공간을 차지하기 때문에 스타일(넓이,높이) 지정이 여렵다
+    -->
+
+    <!-- 속성을 변경하지 안흠 -->
+    <ul>
+        <li class="v_menu">가로메뉴_1</li>
+        <li class="v_menu">가로메뉴_2</li>
+        <li class="v_menu">가로메뉴_3</li>
+        <li class="v_menu">가로메뉴_4</li>
+    </ul>
+
+    <!-- inilne요소로 변경 -->
+    <ul>
+        <li class="h_menu">가로메뉴_1</li>
+        <li class="h_menu">가로메뉴_2</li>
+        <li class="h_menu">가로메뉴_3</li>
+        <li class="h_menu">가로메뉴_4</li>
+    </ul>
+    
+</body>
+</html>

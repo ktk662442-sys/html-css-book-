@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display  inilne-block요소</title>
+    <style>
+        li{
+            border: 2px solid black;
+        }
+
+        .menu1{
+            display: inline;
+            height: 40px; /*인라인 요소는 높이값이 적요오되지 않음*/
+            background-color: yellowgreen;
+        }
+
+        .menu2{
+            display: inline-block;
+            height: 40px; /*적요됨*/
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 
+        display  inilne-block
+        = 'inilne'으로 한 줄 배치는 가능하지만 넓이와 높이, 마진등 정확한 값이 필요한 경우에는 적용이 어렵다
+        = 이러한 경우 해당 요소들을 '가로로 쉽게 배치'할 수 있고 각 요소에 '정확한 수치를 지정'할 수 있다
+    -->
+
+    <!-- inilne 속성 -->
+    <ul>
+        <li class="menu1">inilne</li>
+        <li class="menu1">inilne</li>
+        <li class="menu1">inilne</li>
+        <li class="menu1">inilne</li>
+    </ul>
+
+
+    <!-- inilne-block 소겅 -->
+     <ul>
+        <li class="menu2">inilne-block</li>
+        <li class="menu2">inilne-block</li>
+        <li class="menu2">inilne-block</li>
+        <li class="menu2">inilne-block</li>
+    </ul>
+    
+</body>
+</html>

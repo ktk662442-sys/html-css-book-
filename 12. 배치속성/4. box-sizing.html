@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box-sizing</title>
+    <style>
+        div{
+            width: 300px;
+            height: 300px;
+            border: 10px solid black;
+            padding: 30px;
+        }
+
+        .box1{
+            box-sizing: border-box;
+        }
+        .box2{
+            box-sizing: content-box;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 
+       box-sizing
+       1) border-box
+       = 넓이 속성을 콘텐츠 영역의 테두리까지 포함한 박스 모델 전체 넓이값으로 이용
+
+       2) content-box
+       = 넓이 속성을 콘텐츠 영역 넓이 값으로 사용(기본값)
+       = 패딩, 마진, 보더 등 모두 더해서 박스크기를 조절
+    -->
+
+     <div class="box1">box1</div>
+     <div class="box2">box2</div>
+    
+</body>
+</html>

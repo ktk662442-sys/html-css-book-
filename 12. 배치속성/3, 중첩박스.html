@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>중첩박스</title>
+    <style>
+        .banner{
+            width: 740px;
+            height: 120px;
+            background-color: aqua;
+            float: left;
+            text-align: center;
+            line-height: 120px;
+             border: 2px solid black;
+        }
+
+        .login{
+            width: 333px;
+            height: 120px;
+            background-color: aquamarine;
+            float: right;
+            margin-left: 5px;
+            text-align: center;
+            line-height: 120px;
+            border: 2px solid black;
+        }
+
+        .main{ /*중첩박스*/
+            width: 1089px;
+            height: 120px;
+            margin: 0 auto;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 
+        중첩박스
+        = 'margin : 0 auto'을 사용하려면 전체를 묶어주는 박스 1개가 필요하다
+        = 이때 전체를 묶어주는 박스가 '중첩박스'이다
+        = 모든 자식을 감싸고 있는 부모박스
+        = 부모박스
+    -->
+
+   <div class="main"> <!--중첩박스-->
+        <div class="banner">배너영역</div>
+        <div class="login">로그인 영역</div>
+   </div>
+    
+</body>
+</html>

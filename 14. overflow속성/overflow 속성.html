@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflow 속성</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        img{
+            width: 500%;
+        }
+
+        .contents1{
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            float: left;
+            margin: 10px;
+        }
+
+         .contents2{
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            float: left;
+            margin-left: 30px;
+            margin: 10px;
+        }
+
+         .contents3{
+            width: 200px;
+            overflow: hidden;
+            border: 2px solid black;
+            float: left;
+            margin: 10px;
+            margin-left: 30px;
+        }
+
+         .contents4{
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+            border: 2px solid black;
+            float: left;
+            margin: 10px;
+            margin-left: 30px;
+        }
+
+        .scrollbox1{
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            float: left;
+            margin: 10px;
+            overflow: scroll;
+        }
+
+         .scrollbox2{
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            float: left;
+            margin: 10px;
+            overflow-x: scroll;
+            overflow-y: hidden;
+        }
+
+         .scrollbox3{
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            float: left;
+            margin: 10px;
+            overflow-y: scroll;
+            overflow-x: hidden;
+
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 
+        overflow 속성
+        = '내부 요소(자식요소)'가 '부모박스'범위를 벗어날 때 어떻게 처리할 것인지를 지정
+
+        1. hidden
+        = 부모 영역을 벗어나는 부분이 보이지 않게 한다
+        = 높이를 미지정시 콘텐츠가 양에 따라서 같이 늘어난다
+
+        2. scroll
+        = 영역을 벗어나는 부분은 스크롤바를 표시
+        = 박스(block)의 내부 스크롤 바를 지정하고자 할 때 사용
+        1) overflow : scroll = 영역을 벗어나는 가로/세로 부분을 스크롤바로 나타나게 하거나 숨긴다
+        2) overflow-x : scroll= 가로 좌표에 대한 스크롤 바를 숨기거나 나타나게 함
+        2) overflow-y : scroll= 세로 좌표에 대한 스크롤 바를 숨기거나 나타나게 함
+    
+        3.visible 
+        = 박스를 넘어가서 보여준다(초기 설정과 동일)
+
+        4. auto
+        = 박스를 넘어가지 않으면 스크롤 바가 나오지 않고 박스를 넘어갈 때 스크롤바가 표시
+
+        5. initial
+        = 기본값
+
+        6. inherit
+        = 부모요소의 속성을 상속
+    -->
+
+    <h1>hidden속성</h1>
+
+    <div class="contents1">
+        <h4>콘텐츠 양이 일정</h4>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, assumenda quis? Facilis deserunt saepe suscipit nam illum
+        </p>
+    </div>
+
+     <div class="contents2">
+        <h4>콘텐츠 양이 많거나 유동적일 때 흘러 넘침</h4>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, assumenda quis? Facilis deserunt saepe suscipit nam illum expedita repellendus laborum, delectus libero ad perferendis architecto error similique atque! Expedita, numquam.
+        </p>
+    </div>
+
+     <div class="contents3">
+        <h4>콘텐츠 양에 따라서 높이가 늘어남</h4>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, assumenda quis? Facilis deserunt saepe suscipit nam illum expedita repellendus laborum, delectus libero ad perferendis architecto error similique atque! Expedita, numquam.
+        </p>
+    </div>
+
+     <div class="contents4">
+        <h4>박스의 지정된 높이만큼만 콘텐츠가 보임</h4>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, assumenda quis? Facilis deserunt saepe suscipit nam illum expedita repellendus laborum, delectus libero ad perferendis architecto error similique atque! Expedita, numquam.
+        </p>
+    </div>
+
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+     
+
+    <h1>scroll속성</h1>
+
+    <div class="scrollbox1">
+        <h4>SCROLL-X,Y</h4>
+        <p>
+            <img src="https://cdn.pixabay.com/photo/2021/03/01/09/29/woman-6059236_1280.jpg" alt="">
+        </p>
+    </div> 
+    
+    <div class="scrollbox2">
+        <h4>SCROLL-X</h4>
+        <p>
+            <img src="https://cdn.pixabay.com/photo/2021/03/01/09/29/woman-6059236_1280.jpg" alt="">
+        </p>
+    </div> 
+
+    <div class="scrollbox3">
+        <h4>SCROLL-Y</h4>
+        <p>
+            <img src="https://cdn.pixabay.com/photo/2021/03/01/09/29/woman-6059236_1280.jpg" alt="">
+        </p>
+    </div> 
+</body>
+</html>
