@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>후손 선택자와 자손 선택자</title>
+    <style>
+        div>h1{
+            background-color: yellowgreen;
+        }
+
+        div h1{
+            background-color: yellow;
+        }
+
+        div span{
+            background-color: orange;
+        }
+
+        div>span{
+            border: 5px solid orangered;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 
+        1. 후손 선택자
+        = '부모 선택자' 안에 들어있는 모든 '자식 선택자'
+            선택자A 선택자B
+
+        2. 자손 선택자
+        = '부모 선택자' 바로 아래 계층에 있는 선택자 
+             선택자A>선택자B
+    -->
+
+    <div>
+        <h1>제목1</h1>
+        <h2>제목2</h2>
+
+        <div>
+            <ul>
+                <li>menu1</li>
+                <li>menu2</li>
+                <li><span>menu3</span></li>
+            </ul>
+        </div>
+        <h2>제목2</h2>
+        <span>span</span>
+    </div>
+    
+</body>
+</html>

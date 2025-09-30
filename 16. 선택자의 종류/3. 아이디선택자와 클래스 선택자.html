@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아이디선택자와 클래스 선택자</title>
+    <style>
+        #header{
+            width: 300px;
+            line-height: 50px;
+            background-color: lightgray;
+            text-align: center;
+        }
+
+        .box{
+            border: 3px dotted black;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 
+        아이디 선택자(#아이디)
+        = 아이디 속성을 가지고 있는 태그를 선택
+        = 한 번만 선택이 가능하다
+
+        클래스 선택자(.클래스)
+        = 특정한 클래스를 가지고 있는 태그를 선택
+        = 여러번 선택이 가능하다
+    -->
+
+    <h1 id="header">Lorem ipsum</h1>
+
+    <p class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quod eius aperiam rem quaerat recusandae quibusdam voluptatem esse, consequatur, explicabo, cum id modi? Alias dicta porro reprehenderit voluptas provident similique.
+    </p>
+
+    <p class="box">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae corporis enim dolor assumenda tenetur asperiores temporibus atque nam maxime molestias minima maiores, dolorem ad aliquam? Veritatis aliquam libero officia nobis?
+    </p>
+</body>
+</html>
