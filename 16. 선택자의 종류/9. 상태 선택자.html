@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상태 선택자</title>
+    <style>
+        input:enabled{
+            background-color: blue;
+            color: white;
+        }
+
+        input:disabled{
+            background-color: black;
+        }
+
+        input:focus{
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- 
+        상태 선택자
+        = 입력 양식의 상태를 선택할 때 사용
+         :checked = 체크 상태의 input 태그 선택
+         :focus = 초점이 맞춰진 input 태그 선택
+         :enabled = 사용 가능한 input 태그 선택
+         :disabled = 사용 불가능한 input 태그 선택
+    -->
+
+    <p><input type="text"></p>
+
+    <h1>disavled</h1>
+    <p>입역을 할 수 없는 상태로 만들기</p>
+    <input disabled="disabled">
+
+</body>
+</html>

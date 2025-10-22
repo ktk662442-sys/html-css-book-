@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>형태 구조 선택자</title>
+    <style>
+        h1:first-of-type{
+            color: red;
+        }
+
+        h2:last-of-type0{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 
+        형태 구조 선택자
+        = 일반 구조 선택자와 비슷하지만 태그 형태로 구분
+            :first-of-type = 부모 박스 중 첫 번째 태그
+            :last-of-type = 부모 박스 중 마지막 번째 태그
+            :nth-of-type(n번째) = 부모 박스 중  n번째 태그
+            :nth-last-of-type(n번째) = 부모 박스 중 뒤에서 n번째 태그
+    -->
+
+    <h1>header_1</h1>
+    <h2>header_2</h2>
+    <h3>header_3</h3>
+    <h4>header_4</h4>
+    <h5>header_5</h5>
+    <h6>header_6</h6>
+    
+</body>
+</html>
