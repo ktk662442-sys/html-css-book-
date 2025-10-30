@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상 요소 선택자</title>
+    <style>
+        h1::before{
+            content: '하하';
+            color: red;
+        }
+
+        p::after{
+            content: '호호';
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 
+        가상 요소 선택자
+        1. ::before
+        = 특정 요소의 '앞에' 삽입
+        = 내용이 필요한 경우 'content' 속성을 이용
+
+        2. ::after
+        = 특정 요소의 '뒤에' 삽입
+        = 내용이 필요한 경우 'content' 속성을 이용
+    -->
+
+    <h1>TTTLE-1</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus aspernatur voluptatum laborum nulla aperiam quidem distinctio fuga repellendus ipsam? Reiciendis accusamus culpa repellendus, fugiat iste iusto rerum animi aut odit?
+    </p>
+    
+</body>
+</html>
