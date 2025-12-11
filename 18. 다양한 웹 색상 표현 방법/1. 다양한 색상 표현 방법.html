@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>다양한 색상 표현 방법</title>
+    <style>
+        *{margin : 0; padding: 0;}
+
+        div{
+            width: 100%;
+            height: 100px;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+
+        /* 다양한 색상 코드 표현 */
+        #word{
+            background: red;
+        }
+
+        #hex{
+            background: #ff0000;
+        }
+
+        #rgb{
+            background: rgb(255, 0, 0);
+        }
+
+        #rgba{
+            background: rgba(255, 0, 0, 0.5);
+        }
+
+        #hsl{
+            background: hsl(0, 100%, 50%);
+        }
+
+        #hsla{
+            background: hsla(0, 100%, 50%, 0.5);
+        }
+
+        h1,h2{
+            width: 300px;
+            height: 300px;
+            line-height: 300px;
+            text-align: center;
+            font-size: 30px;
+            float: left;
+            border: 4px solid black;
+        }
+
+        .box1{
+            background-color: #1732ff;
+            opacity: 0.5;
+        }
+
+        .box2{
+            background-color: rgba(23, 50, 250, 0.5);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 
+        1. 다양한 색상 표현 방법
+        = CSS3에서는 다양한 색상 단위를 제공한다
+
+        2. hex 코드 색상 단위
+        = 'rgb' 색상 단위를 짧게 입력하는 방법으로 '#'으로 시작되는 16진수로 구성
+
+        3. hsl 코드 색상 단위
+        = 색상(Hun), 채도(Saturation), 명도(Lightness)를 사용
+
+        4. 다양한 색상 코드 표현
+        = 실제 웹 페이지에서 스타일을 지정할 때 색상을 사용
+
+        5. opacity와 alpha값
+        alpha값
+        = 투명도를 나타내는 값인데 'rgba','hsla'를 통해 박스 색상에 투명도를 준다
+
+        opacity값
+        = 스타일로 표현 가능한 투명도
+        = 0~1까지 투명도를 조절가능하여 박스에 적용
+        = 박스뿐만 아니라 박스 안에 있는 모든 내용에 대해서도 적용 가능
+    -->
+
+    <!-- 다양한 색상 코드 표현 -->
+     <div id="word">word : 단어로 입력하는 방식</div>
+     <div id="hex">hex : #웹 번호로 입력하는 방식</div>
+     <div id="rgb">rgb : rgb(Hun,Saturation,Lightness)</div>
+     <div id="rgba">rgba : rgb(Hun,Saturation,Lightness,alpha)</div>
+     <div id="hsl">hsl : hsl(Hun,Saturation,Lightness)</div>
+     <div id="hsla">hsla : hsla(Hun,Saturation,Lightness,alpha)</div>
+    
+     <!-- opacity와 alpha값 -->
+      <h1 class="box1">opacity</h1>
+      <h2 class="box2">alpha</h2>
+</body>
+</html>
