@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>그레이디언트</title>
+    <style>
+        .linear{
+            width: 300px;
+            height: 200px;
+            /* background: linear-gradient(45deg, #398235, #ffffff); 45도 방향으로 초록색에서 흰색으로 그라디언트 */
+            background: linear-gradient(45deg, #398235 0%, #ffffff 51%, #c9de96 100%); /* 45도 방향으로 초록색에서 흰색, 연두색으로 그라디언트 */
+        }
+
+        .radial{
+            width: 300px;
+            height: 200px;
+            background: radial-gradient(ellipse at center, #398235 0%, #ffffff 51%, #c9de96 100%);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 
+        1. 그레이디언트 효과로 배경 표현하기
+        = '선형','원형' 그레디언트를 사용해 배경을 꾸밀 수 있다 
+        = 'linear-gradient()' : 선형 그레디언트
+        = 'radial-gradient()' : 원형 그레디언트
+
+        1) 선형 그레디언트
+        = 수직,수평,대각선 방향으로 일정하게 변하는 색상
+           ex) background: linear-gradient(각도 or 방향, 색상1, 색상2, ...);
+        = 각도 : 0deg(위), 90deg(오른쪽), 180deg(아래), 270deg(왼쪽) / 단위는 deg
+        = 방향 : to right(왼쪽에서 오른쪽), to left(오른쪽에서 왼쪽), to bottom(위에서 아래), to top(아래에서 위)
+        = 색상 : 색상은 여러개 지정 가능
+
+        2) 원형 그레디언트
+        = 원이나 중심부터 동그란 원을 그리며  바깥쪽 방향으로 색상이 바뀌는 원형
+        = 중심에서 바깥쪽으로 퍼져나가는 형태의 색상
+           ex) background: radial-gradient(형태 크기 at 위치, 색상1, 색상2, ...);
+        = 형태 크기 : circle(원형), ellipse(타원형)
+        = 위치 : at center(중앙), at top left(왼쪽 위), at top right(오른쪽 위), at bottom left(왼쪽 아래), at bottom right(오른쪽 아래)
+
+        3) ColorZille.com
+        = 그레디언트 색상 조합을 쉽게 만들어주는 사이트
+                                                                                                                                 
+    -->
+
+    <div class="linear">선형 그레디언트</div>
+    <div class="radial">원형 그레디언트</div>
+    
+</body>
+</html>
