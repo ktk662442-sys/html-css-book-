@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>audiio,video,iframe</title>
+</head>
+<body>
+
+
+    <!-- 
+        멀티미디어 태그
+        1. audio : 오디오 재생 태그
+            <audio src="오디오 파일 경로" [속성] [속성='속성값']>내용</audio>
+        <속성>
+            autoplay : 자동 재생
+            controls : 재생 컨트롤러 표시
+            loop : 반복 재생
+            muted : 음소거
+
+        2. video : 비디오 재생 태그
+            <video src="비디오 파일 경로" [속성] [속성='속성값']>내용</video>
+        <속성>
+            autoplay : 자동 재생
+            controls : 재생 컨트롤러 표시
+            loop : 반복 재생    
+            muted : 음소거
+            width : 가로 크기 지정
+            height : 세로 크기 지정
+        
+        3. iframe : 다른 문서를 현재 문서에 삽입하는 태그
+            <iframe src="문서 파일 경로" [속성] [속성='속성값']>내용</iframe>
+        <속성>
+            width : 가로 크기 지정
+            height : 세로 크기 지정
+    -->
+    
+    
+    <audio src="berry-groovy-bass-trap-476603.mp3" controls></audio>
+    <video src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" autoplay loop muted></video>
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/_W9OHR9SYXE?si=H85UFvCzThUB0jGP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>
