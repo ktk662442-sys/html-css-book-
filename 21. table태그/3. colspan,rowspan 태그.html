@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>colspan,rowspan 태그</title>
+    <style>
+        table,tr,th,td{
+            border: 1px solid #333;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 
+        colspan,rowspan 태그
+        1. colspan 
+        = 열을 합칠 때 사용하는 속성
+        = 열의 개수를 지정하는 속성
+
+        2. rowspan 
+        = 행을 합칠 때 사용하는 속성
+        = 행의 개수를 지정하는 속성
+    -->
+
+    <figcaption>이미지에 대한 설명</figcaption> <!-- 이미지 설명 -->
+
+    <table> <!-- 표의 시작 -->
+
+        <caption>표의 제목</caption> <!-- 표의 제목 -->
+
+        <tr> <!-- 행의 시작 -->
+
+            <th colspan="2">Colspan Rine</th> <!-- 제목 셀 -->
+            <th>제목1</th>
+
+        </tr>
+
+        <tr> <!-- 행의 시작 -->
+
+            <td rowspan="2">Rowspan Rine</td> <!-- 열의 시작 -->
+            <td>내용1</td>
+
+        </tr>
+
+        <tr> <!-- 행의 시작 -->
+
+            <td>내용1</td> <!-- 열의 시작 -->
+            <td>내용1</td>
+
+        </tr>
+
+    </table>
+    
+</body>
+</html>
