@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>thead, tbody, tfoot 태그</title>
+    <style>
+        td,th{
+            border: 2px solid #333;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 
+        thead, tbody, tfoot 태그 
+        1. thead
+        = 표의 제목 부분을 나타내는 태그
+
+        2. tbody
+        = 표의 내용 부분을 나타내는 태그
+
+        3. tfoot
+        = 표의 꼬리 부분을 나타내는 태그
+    -->
+
+    <table>
+        <caption>공지사항</caption> 
+        <!-- 표의 제목 부분 -->
+
+        <thead>
+            <tr>
+                <th>번호</th>
+                <th>제목</th>
+                <th>작성자</th>
+                <th>작성일</th>
+            </tr>
+        </thead>
+        <!-- 표의 본문 부분 -->
+
+        <tbody>
+            <tr>
+                <td>001</td>
+                <td>공지사항 제목</td>
+                <td>작성자 이름</td>
+                <td>2024-06-01</td>
+            </tr>
+
+            <tr>
+                <td>002</td>
+                <td>공지사항 제목 2</td>
+                <td>작성자 이름 2</td>
+                <td>2024-06-02</td>
+            </tr>
+        </tbody>
+        <!-- 표의 요약 부분 -->
+
+
+        <tfoot>
+            <tr>
+                <td>250</td>
+                <td>10개의 게시물</td>
+                <td>2020-03</td>
+                <td>2020-07</td>
+            </tr>
+        </tfoot>
+        <!-- 표의 꼬리 부분 -->
+    </table>
+    
+</body>
+</html>
